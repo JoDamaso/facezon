@@ -9,7 +9,7 @@ ProductTag.init(
     // define columns
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      
       autoIncrement: true,
       primaryKey: true
     },
@@ -26,14 +26,18 @@ ProductTag.init(
         model: 'tag',
         key: 'id'
       }
-    }
+    },
+    // product_tag: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'product_tag'
   }
 );
 
