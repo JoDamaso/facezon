@@ -14,6 +14,6 @@ app.use(routes);
 // sync sequelize models to the database, then turn on the server 
 // turn on connection to db and server
 // when 'true', DROP TABLE IF EXISTS happens, false will not 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
