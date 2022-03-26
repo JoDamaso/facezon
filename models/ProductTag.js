@@ -26,11 +26,7 @@ ProductTag.init(
         model: 'tag',
         key: 'id'
       }
-    },
-    // product_tag: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // }
+    }
   },
   {
     sequelize,
